@@ -1,0 +1,27 @@
+# Fitbit Data Processing Script
+
+This script is designed to process Fitbit data in various formats, including heart rate, sleep, exercise, steps, calories, and distance data. It allows you to specify the path to the data, starting time, window in hours, and stride as command-line arguments.
+
+## Requirements
+Install all the packages shown in requirements.txt
+- Python 3.11.5
+- pandas
+- scikit-learn
+- numpy
+- ...
+
+## Usage
+
+1. Clone this repository to your local machine.
+
+2. Install the required dependencies if you haven't already
+
+3. python3 segmentation.py /path/to/data --start_time "2019-11-01 8:00:00" --window 24 --stride 24
+
+    /path/to/data: Provide the path to the directory containing your Fitbit data.
+    --start_time: Optional. Specify the starting time in the format "YYYY-MM-DD HH:MM:SS." Default is "2019-11-01 8:00:00."
+    --window: Optional. Set the window size in hours. Default is 24.
+    --stride: Optional. Set the stride size in hours. Default is 24.
+    
+4. If you want to filter your data based on cluster labels, you can use the function located in utils.py. Please refer to the documentation for details on how to use the function.
+
